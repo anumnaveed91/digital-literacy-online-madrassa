@@ -1,0 +1,6 @@
+{
+  "name": "Digital Literacy Online Madrassa",
+  "description": "An offline-first, gamified digital literacy platform with H5P-style interactive challenges and adaptive learning rewards for out-of-school children in Pakistan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

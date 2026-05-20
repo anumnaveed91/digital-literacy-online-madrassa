@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Quicksand:wght@500;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Quicksand", "Inter", system-ui, sans-serif;
+  --font-display: "Fredoka", "Quicksand", sans-serif;
+  --font-urdu: "Noto Nastaliq Urdu", "Quicksand", sans-serif;
+}
+
+@layer utilities {
+  .vibrant-card {
+    background-color: #ffffff;
+    border: 3px solid #1e293b;
+    border-radius: 20px;
+    box-shadow: 6px 6px 0px 0px #1e293b;
+    transition: all 0.2s ease;
+  }
+  
+  .vibrant-card-yellow {
+    background-color: #fef08a;
+    border: 3px solid #1e293b;
+    border-radius: 20px;
+    box-shadow: 6px 6px 0px 0px #1e293b;
+  }
+
+  .vibrant-card-cyan {
+    background-color: #e0f2fe;
+    border: 3px solid #1e293b;
+    border-radius: 20px;
+    box-shadow: 6px 6px 0px 0px #1e293b;
+  }
+
+  .vibrant-card-rose {
+    background-color: #ffe4e6;
+    border: 3px solid #1e293b;
+    border-radius: 20px;
+    box-shadow: 6px 6px 0px 0px #1e293b;
+  }
+
+  .vibrant-card-emerald {
+    background-color: #d1fae5;
+    border: 3px solid #1e293b;
+    border-radius: 20px;
+    box-shadow: 6px 6px 0px 0px #1e293b;
+  }
+
+  .vibrant-button {
+    border: 3px solid #1e293b;
+    border-radius: 16px;
+    box-shadow: 4px 4px 0px 0px #1e293b;
+    transition: all 0.15s ease-in-out;
+  }
+
+  .vibrant-button:hover:not(:disabled) {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px 0px #1e293b;
+  }
+
+  .vibrant-button:active:not(:disabled) {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px 0px #1e293b;
+  }
+}
+
+/* Custom animations */
+@keyframes pulse-soft {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 3s infinite ease-in-out;
+}
